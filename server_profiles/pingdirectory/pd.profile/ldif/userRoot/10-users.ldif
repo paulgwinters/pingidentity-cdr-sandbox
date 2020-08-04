@@ -83,7 +83,7 @@ sn: PingFederate
 cn: Administrator
 givenName: PingFederate
 uid: administrator
-userPassword: 2FederateM0re
+userPassword: ${PING_IDENTITY_PASSWORD}
 pf-connected-identity: auth-source=pf-local-identity:user-id=administrator
 
 dn: uid=access2federate,ou=People,${USER_BASE_DN}
@@ -96,7 +96,7 @@ sn: PingAccess
 cn: pingFederateAdministrator
 givenName: PingAccess
 uid: access2federate
-userPassword: 2FederateM0re
+userPassword: ${PING_IDENTITY_PASSWORD}
 pf-connected-identity: auth-source=pf-local-identity:user-id=access2federate
 
 
@@ -110,5 +110,5 @@ sn: PingFederate
 cn: Auditor
 givenName: PingFederate
 uid: auditor
-userPassword: 2FederateM0re
+userPassword: ${PING_IDENTITY_PASSWORD}
 pf-connected-identity: auth-source=pf-local-identity:user-id=auditor
